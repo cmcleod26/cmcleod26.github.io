@@ -1,59 +1,119 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href = "main.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connor McLeod</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .main-content {
+            width: 65%;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 30%;
+            padding: 20px;
+            background: #f4f4f4;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            right: 10px;
+            top: 100px;
+        }
+        .profile-pic {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .fun-fact {
+            width: 100%;
+            padding: 15px;
+            background: #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .projects {
+            width: 65%;
+            padding: 20px;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
 <body>
-    <title>Connor Mcleod</title>
-    <h1>Connor McLeod's Personal Website</h1>
-    <h3>Junior Computer Science Major at Stonehill College</h3>
-    <div>
+    <header>
+        <h1>Connor McLeod's Personal Website</h1>
+        <h3>Junior Computer Science Major at Stonehill College</h3>
+    </header>
+    
+    <div class="container">
+        <main class="main-content">
+            <section class="information">
+                <h2>About Me</h2>
+                <p>My name is Connor, and I am from Lunenburg, Mass. I am currently attending Stonehill College as a Junior Computer Science major. My anticipated graduation date is May 2026.</p>
+            </section>
 
-    </div>
-    <div class = "information">
-        <h2>About Me</h2>
-        <p>My name is Connor and I am from Lunenburg Mass. I am currently attending Stonehill College as a Junior computer scientist. my anticipated gracuation date is May 2026</p>
-    </div>
+            <section class="information">
+                <h2>Contact Info</h2>
+                <p>Email: <a href="mailto:cmcleod2@students.stonehill.edu">cmcleod2@students.stonehill.edu</a></p>
+            </section>
 
-    <div class = "information">
-        <h2>Contact Info</h2>
-        <p><a href="mailto: clmcleod@icloud.com">clmcleod@icloud.com</a></p>
-        <p><a href="https://www.linkedin.com/in/connor-mcleod-524a72288/"></a></p>
-    </div>
+            <section class="projects">
+                <h2>Relevant Projects</h2>
+                    <ul>
+                        <li><a href="MECS_LR1.pdf" target="_blank">Project 1</a></li>
+                        <li><a href="MECS_LR3.pdf" target="_blank">Project 2</a></li>
+                        <li><a href="MECS_LR4.pdf" target="_blank">Project 3</a></li>
+                    </ul>
+                
+                <h3>Additional Projects</h3>
+                    <p>Eagle Scout Project</p>
+                        <ul>
+                            <li>Oversaw patrols of scouts, planning meals, gear, and legal forms necessary for camping trips.</li>
+                            <li>Led a project overseeing eight people building bog bridges and clearing invasive species on local trails.</li>
+                            <li>Accumulated 300+ hours of community service over seven years.</li>
+                        </ul>
 
-    <div class = "information">
-        <h2>Relevent Projects</h2>
-        <p>Eagle Scout Project</p>
-        <ul>
-            <li>Oversaw “patrols” of scouts, planning meals, gear and any legal forms necessary for any camping trips </li>
-            <li>Lead a project overseeing eight people building bog bridges and clearing invasive species on local trails </li>
-            <li>Accumulated 300+ hours of community service over seven years </li>
-        </ul>
-    </div>
+            </section>
 
-    <div class = "information">
-        <h2>Work experience</h2>
-        <p>Computer Science Teaching Assistant | Stonehill College | North Easton, MA: May 2024 - Present</p>
-        <ul>
-            <li>Taught Computer Science fundamentals to students new to programming </li>
-            <li>Collaborated with the courses Professor to ensure that students implement subjects correctly in classwork  </li>
-        </ul>
-        <p>Seasonal Help | Low Places Ranch | Lunenburg, MA: May 2024 - Present</p>
-        <ul>
-            <li>Interacted with customers daily at the farms store </li>
-            <li>Streamlined point of sale systems to work more efficiently </li>
-            <li>Cared for a variety of animals while maintain pastures and farm upkeep   </li>
-            <li>Worked in teams of 2-4 usually delivering at least 8,000 lbs. of hay per delivery  </li>
-        </ul>
-    </div>
+            <section class="information">
+                <h2>Work Experience</h2>
+                <h3>Computer Science Teaching Assistant | Stonehill College | May 2024 - Present</h3>
+                <ul>
+                    <li>Taught Computer Science fundamentals to students new to programming.</li>
+                    <li>Collaborated with the course professor to ensure students implemented subjects correctly in classwork.</li>
+                </ul>
+                
+                <h3>Seasonal Help | Low Places Ranch | May 2024 - Present</h3>
+                <ul>
+                    <li>Interacted with customers daily at the farm store.</li>
+                    <li>Streamlined point-of-sale systems to work more efficiently.</li>
+                    <li>Cared for a variety of animals while maintaining pastures and farm upkeep.</li>
+                    <li>Worked in teams of 2-4, usually delivering at least 8,000 lbs. of hay per delivery.</li>
+                </ul>
+            </section>
+        </main>
 
-    <div class = "Skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Computer: Mac, Windows OS, Linux, Virtual Studios, Git Hub</li>
-            <li>Programming Languages: Java, Python and Logo</li>
-        </ul>
+        <aside class="sidebar">
+            <img src="website_pic.JPG" alt="Connor McLeod" class="profile-pic">
+            <div class="fun-fact">
+                <h3>Fun Fact</h3>
+                <p>My three favorite music artists:</p>
+                <ul>
+                    <li>Zach Bryan</li>
+                    <li>Boston</li>
+                    <li>Kendrick Lamar</li>
+                </ul>
+            </div>
+        </aside>
     </div>
-
 </body>
-
-
-
 </html>
